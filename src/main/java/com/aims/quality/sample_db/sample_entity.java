@@ -1,4 +1,4 @@
 package com.aims.quality.sample_db;
 
-public class main_dto {
+public class sample_entity {
 }

@@ -1,4 +1,4 @@
-package com.aims.quality.main_db;
+package com.aims.quality.sample_db;
 
 public class sample_repository {
 }
