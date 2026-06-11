@@ -35,21 +35,15 @@ management:
 app:
   datasource:
     main:
-      driver-class-name: ${MAIN_DB_DRIVER_CLASS_NAME:com.mysql.cj.jdbc.Driver}
-      jdbc-url: ${MAIN_DB_JDBC_URL:jdbc:mysql://localhost:3306/maindb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8}
-      username: ${MAIN_DB_USERNAME:root}
-      password: ${MAIN_DB_PASSWORD:root}
-      maximum-pool-size: ${MAIN_DB_MAXIMUM_POOL_SIZE:10}
-      minimum-idle: ${MAIN_DB_MINIMUM_IDLE:2}
-      pool-name: ${MAIN_DB_POOL_NAME:main-db-pool}
+      url: jdbc:mysql://localhost:13306/maindb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+      username: admin
+      password: f3ew<r6v~7<xdy|!:128zj-DUM_D
+      driver-class-name: com.mysql.cj.jdbc.Driver
     sample:
-      driver-class-name: ${SAMPLE_DB_DRIVER_CLASS_NAME:com.mysql.cj.jdbc.Driver}
-      jdbc-url: ${SAMPLE_DB_JDBC_URL:jdbc:mysql://localhost:3306/sampledb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8}
-      username: ${SAMPLE_DB_USERNAME:root}
-      password: ${SAMPLE_DB_PASSWORD:root}
-      maximum-pool-size: ${SAMPLE_DB_MAXIMUM_POOL_SIZE:5}
-      minimum-idle: ${SAMPLE_DB_MINIMUM_IDLE:1}
-      pool-name: ${SAMPLE_DB_POOL_NAME:sample-db-pool}
+      url: jdbc:mysql://localhost:13306/sampledb?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+      username: admin
+      password: f3ew<r6v~7<xdy|!:128zj-DUM_D
+      driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
     cache:
       ttl: ${REDIS_CACHE_TTL:10m}
@@ -63,11 +57,8 @@ app:
     group-id: ${KAFKA_GROUP_ID:assembly-local}
     auto-offset-reset: ${KAFKA_AUTO_OFFSET_RESET:earliest}
 
-logging:
-  config: classpath:logback-spring.xml
-
 jwt:
-  secret-key: ${JWT_SECRET_KEY:assembly-service-local-jwt-secret-key-must-be-at-least-32-bytes}
+  secret-key: ${JWT_SECRET_KEY:quality-service-local-jwt-secret-key-must-be-at-least-32-bytes}
   expiration:
     access: ${JWT_ACCESS_EXPIRATION:3600000}
     refresh: ${JWT_REFRESH_EXPIRATION:1209600000}
