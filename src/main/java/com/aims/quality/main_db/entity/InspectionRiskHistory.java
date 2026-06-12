@@ -23,5 +23,5 @@ public class InspectionRiskHistory {
     private Double riskScore;
 
     @Column(name = "record_time")
-    private LocalDateTime recordTime;
+    private String recordTime;
 }

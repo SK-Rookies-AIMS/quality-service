@@ -16,7 +16,7 @@ public class InspectionRiskHistoryDto {
 
     private Double riskScore;
 
-    private LocalDateTime recordTime;
+    private String recordTime;
 
     public static InspectionRiskHistoryDto fromEntity(
             InspectionRiskHistory entity
