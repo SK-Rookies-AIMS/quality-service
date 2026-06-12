@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/inspection")
+@RequestMapping("/api/quality/inspection")
 @RequiredArgsConstructor
 public class InspectionSummaryController {
     private final InspectionSummaryRepository inspectionSummaryRepository;
