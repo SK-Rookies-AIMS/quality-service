@@ -39,7 +39,6 @@ jobs:
           repository: SK-Rookies-AIMS/infra
           ref: dev
           path: infra
-          token: ${{ secrets.INFRA_REPO_TOKEN }}
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
