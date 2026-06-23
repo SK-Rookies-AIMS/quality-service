@@ -16,7 +16,9 @@ public class InspectionRiskHistoryDto {
 
     private Double riskScore;
 
-    private String recordTime;
+    private String startTime;
+
+    private String endTime;
 
     public static InspectionRiskHistoryDto fromEntity(
             InspectionRiskHistory entity
@@ -25,7 +27,8 @@ public class InspectionRiskHistoryDto {
                 .id(entity.getId())
                 .inspectionType(entity.getInspectionType())
                 .riskScore(entity.getRiskScore())
-                .recordTime(entity.getRecordTime())
+                .startTime(entity.getStartTime())
+                .endTime(entity.getEndTime())
                 .build();
     }
 
@@ -34,7 +37,8 @@ public class InspectionRiskHistoryDto {
                 .id(this.id)
                 .inspectionType(this.inspectionType)
                 .riskScore(this.riskScore)
-                .recordTime(this.recordTime)
+                .startTime(this.startTime)
+                .endTime(this.endTime)
                 .build();
     }
 }
