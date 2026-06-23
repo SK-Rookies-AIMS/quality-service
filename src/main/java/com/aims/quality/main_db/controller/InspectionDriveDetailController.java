@@ -15,7 +15,7 @@ public class InspectionDriveDetailController {
     private final InspectionDriveDetailRepository
             inspectionDriveDetailRepository;
 
-    @GetMapping("/drive-detail")
+    @GetMapping("/drive-detail") 
     public List<InspectionDriveDetailDto> getDriveDetailList() {
 
         List<InspectionDriveDetail> detailList =
