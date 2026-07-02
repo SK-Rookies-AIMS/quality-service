@@ -16,7 +16,8 @@ public class InspectionProcessService {
 
     public List<InspectionProcessDto> getProcessList() {
 
-        return inspectionProcessRepository.findAll()
+        return inspectionProcessRepository
+                .findAllByOrderByIdAsc()
                 .stream()
                 .map(InspectionProcessDto::fromEntity)
                 .toList();
