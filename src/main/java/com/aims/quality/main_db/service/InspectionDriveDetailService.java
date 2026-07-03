@@ -16,7 +16,8 @@ public class InspectionDriveDetailService {
 
     public List<InspectionDriveDetailDto> getDriveDetailList() {
 
-        return inspectionDriveDetailRepository.findAll()
+        return inspectionDriveDetailRepository
+                .findAllByOrderByIdDesc()
                 .stream()
                 .map(InspectionDriveDetailDto::fromEntity)
                 .toList();
