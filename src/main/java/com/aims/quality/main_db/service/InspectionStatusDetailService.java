@@ -16,7 +16,8 @@ public class InspectionStatusDetailService {
 
     public List<InspectionStatusDetailDto> getStatusDetailList() {
 
-        return inspectionStatusDetailRepository.findAll()
+        return inspectionStatusDetailRepository
+                .findAllByOrderByIdDesc()
                 .stream()
                 .map(InspectionStatusDetailDto::fromEntity)
                 .toList();

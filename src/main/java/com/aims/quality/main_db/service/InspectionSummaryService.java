@@ -31,6 +31,13 @@ public class InspectionSummaryService {
         );
     }
 
+    public InspectionSummaryDto getLatestSummary() {
+
+        return inspectionSummaryRepository.findById(1L)
+                .map(InspectionSummaryDto::fromEntity)
+                .orElse(null);
+    }
+
     public void deleteInspectionSummary(Long id) {
         inspectionSummaryRepository.deleteById(id);
     }
