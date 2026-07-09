@@ -23,7 +23,7 @@ public class InspectionSummaryDto {
 
     private Double abnormalRate;
 
-    private Integer stanbyCount;
+    private Integer standbyCount;
 
     private LocalDateTime createdAt;
 
@@ -35,7 +35,7 @@ public class InspectionSummaryDto {
                 .normalRate(entity.getNormalRate())
                 .abnormalCount(entity.getAbnormalCount())
                 .abnormalRate(entity.getAbnormalRate())
-                .stanbyCount(entity.getStanbyCount())
+                .standbyCount(entity.getStanbyCount())
                 .createdAt(entity.getCreatedAt())
                 .build();
     }
@@ -48,7 +48,7 @@ public class InspectionSummaryDto {
                 .normalRate(this.normalRate)
                 .abnormalCount(this.abnormalCount)
                 .abnormalRate(this.abnormalRate)
-                .stanbyCount(this.stanbyCount)
+                .stanbyCount(this.standbyCount)
                 .createdAt(this.createdAt)
                 .build();
     }
