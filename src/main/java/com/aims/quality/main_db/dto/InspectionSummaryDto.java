@@ -35,7 +35,7 @@ public class InspectionSummaryDto {
                 .normalRate(entity.getNormalRate())
                 .abnormalCount(entity.getAbnormalCount())
                 .abnormalRate(entity.getAbnormalRate())
-                .standbyCount(entity.getStanbyCount())
+                .standbyCount(entity.getStandbyCount())
                 .createdAt(entity.getCreatedAt())
                 .build();
     }
@@ -48,7 +48,7 @@ public class InspectionSummaryDto {
                 .normalRate(this.normalRate)
                 .abnormalCount(this.abnormalCount)
                 .abnormalRate(this.abnormalRate)
-                .stanbyCount(this.standbyCount)
+                .standbyCount(this.standbyCount)
                 .createdAt(this.createdAt)
                 .build();
     }
