@@ -33,8 +33,8 @@ public class InspectionSummary {
     @Column(name = "abnormal_rate")
     private Double abnormalRate;
 
-    @Column(name = "stanby_count")
-    private Integer stanbyCount;
+    @Column(name = "standby_count")
+    private Integer standbyCount;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
